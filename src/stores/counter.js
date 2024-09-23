@@ -15,6 +15,7 @@ export const useDataStore = defineStore("data", () => {
   const loading = ref(null);
   const currentWeatherData = ref([]);
   const apiKey = "c4603d27d3f09b837913e033aaca0017";
+  const invalidCity = ref(false);
 
   const countryInfo = useCountriesStore();
   const { countryData, countryCode } = storeToRefs(countryInfo);
@@ -24,7 +25,17 @@ export const useDataStore = defineStore("data", () => {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&appid=${apiKey}`;
     try {
       const locationResponse = await fetch(url);
+
+      // Check if the response is not ok (e.g., status code 404)
+      if (!locationResponse.ok) {
+        invalidCity.value = true;
+        return; // Exit early if the response is not valid
+      }
+
       const locationData = await locationResponse.json();
+      console.log(locationData);
+      console.log(locationResponse);
+
       currentData.value = locationData;
       countryCode.value = currentData.value.sys.country;
       await countryInfo.changeCountryFormat();
@@ -55,7 +66,8 @@ export const useDataStore = defineStore("data", () => {
       });
       currentWeatherData.value = tempData.value;
     } catch (error) {
-      console.error("Error fetching weather data:", error);
+      console.log("work", error); // Log the error for debugging
+      invalidCity.value = true;
     } finally {
       loading.value = false;
     }
@@ -80,5 +92,6 @@ export const useDataStore = defineStore("data", () => {
     tempData,
     currentWeatherData,
     loading,
+    invalidCity,
   };
 });

@@ -1,10 +1,10 @@
 <template>
   <div :class="primaryBgColor">
     <div
+      v-if="invalidCity"
       id="alert-border-2"
       class="z-50 flex items-center p-4 mb-4 text-red-800 border-t-4 border-red-300 bg-red-50 dark:text-red-400 dark:bg-gray-800 dark:border-red-800"
       role="alert"
-      :class="[invalidInput ? '' : 'hidden']"
     >
       <svg
         class="flex-shrink-0 w-4 h-4"
@@ -24,7 +24,7 @@
       <button
         type="button"
         class="ms-auto -mx-1.5 -my-1.5 bg-red-50 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-red-400 dark:hover:bg-gray-700"
-        data-dismiss-target="#alert-border-2"
+        @click="invalidCity = false"
         aria-label="Close"
       >
         <span class="sr-only">Dismiss</span>
@@ -45,22 +45,20 @@
         </svg>
       </button>
     </div>
+
     <div class="max-w-5xl mx-auto min-h-screen px-5 pt-3">
       <header class="flex flex-rows w-full justify-between">
         <div class="max-w-md grow relative">
           <input
             v-model="inputName"
             type="text"
-            class="w-full md:w-[471px] h-[50px] px-10 text-[1.2rem] focus:outline-none focus:border-0"
+            class="w-full md:w-[471px] rounded-full h-[50px] px-10 text-[1.2rem] focus:outline-none focus:border-0"
             :placeholder="[
               emptyInput ? 'Enter city name first...' : 'Search...',
             ]"
             @keyup.enter="getData"
             @blur="handleBlur"
-            :class="[
-              inputEntered ? 'rounded-t-xl shadow-2xl' : 'rounded-full',
-              emptyInput ? 'placeholder:text-red-300' : '',
-            ]"
+            :class="[emptyInput ? 'placeholder:text-red-300' : '']"
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +93,7 @@
             />
           </svg>
 
-          <div
+          <!-- <div
             class="md:absolute w-full bg-white border border-gray-300 rounded-b-xl md:w-[471px] max-h-[400px] overflow-auto z-50 shadow-2xl shadow-slate-900"
             v-if="inputEntered"
           >
@@ -113,7 +111,7 @@
             >
               {{ city.name }}, {{ city.country }}
             </p>
-          </div>
+          </div> -->
         </div>
         <div>
           <div
@@ -203,7 +201,7 @@ const { lat, lon, showPrediction, finalData, predictionDate, currentData } =
 // Import the store
 const dataStore = useDataStore();
 // Use storeToRefs for state variables
-const { primaryBgColor, secondaryBgColor, city, isFahrenheit } =
+const { primaryBgColor, secondaryBgColor, city, isFahrenheit, invalidCity } =
   storeToRefs(dataStore);
 
 // Access `getWeather` and `setCity` from the store
@@ -240,17 +238,12 @@ const getData = () => {
   if (inputName.value) {
     console.log(inputName.value);
     console.log(filteredName.value);
-    if (filteredName.value != 0) {
-      setCity(inputName.value);
-      city.value = inputName.value;
-      inputName.value = "";
-      getWeather();
-      showPrediction.value = false;
-      filteredName.value = [];
-    } else {
-      invalidInput.value = true;
-      clearInput();
-    }
+    setCity(inputName.value);
+    city.value = inputName.value;
+    inputName.value = "";
+    getWeather();
+    showPrediction.value = false;
+    filteredName.value = [];
   } else {
     emptyInput.value = true;
   }
