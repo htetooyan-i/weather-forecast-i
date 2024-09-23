@@ -31,7 +31,7 @@ export const useCountriesStore = defineStore("countries", () => {
 
   const fetchCountryData = async () => {
     try {
-      const response = await fetch("/citySmall.list.json");
+      const response = await fetch("/city.list.json");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
