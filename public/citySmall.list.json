@@ -1,0 +1,592 @@
+[
+  {
+    "id": 1285173,
+    "name": "Yenangyaung",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 94.883331,
+      "lat": 20.466669
+    }
+  },
+  {
+    "id": 1285871,
+    "name": "Nyaungdon",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.650002,
+      "lat": 17.033331
+    }
+  },
+  {
+    "id": 1285899,
+    "name": "Yamethin",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.150002,
+      "lat": 20.433331
+    }
+  },
+  {
+    "id": 1285941,
+    "name": "Yahaungwa",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 98.150002,
+      "lat": 14.05
+    }
+  },
+  {
+    "id": 1286764,
+    "name": "Wān Yampēng",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 99.366669,
+      "lat": 21.16667
+    }
+  },
+  {
+    "id": 1289828,
+    "name": "Wakema",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.183327,
+      "lat": 16.6
+    }
+  },
+  {
+    "id": 1290374,
+    "name": "Twante",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.933327,
+      "lat": 16.716669
+    }
+  },
+  {
+    "id": 1290596,
+    "name": "Taungoo",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.433327,
+      "lat": 18.933331
+    }
+  },
+  {
+    "id": 1290920,
+    "name": "Tingyaung",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 94.449997,
+      "lat": 16.383329
+    }
+  },
+  {
+    "id": 1291193,
+    "name": "Thongwa",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.527779,
+      "lat": 16.76194
+    }
+  },
+  {
+    "id": 1292037,
+    "name": "Thayetmyo",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.183327,
+      "lat": 19.316669
+    }
+  },
+  {
+    "id": 1292118,
+    "name": "Thayetchin",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 94.550003,
+      "lat": 21.066669
+    }
+  },
+  {
+    "id": 1292288,
+    "name": "Thaton",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 97.371391,
+      "lat": 16.920561
+    }
+  },
+  {
+    "id": 1292313,
+    "name": "Tharyarwady",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.800003,
+      "lat": 17.65
+    }
+  },
+  {
+    "id": 1292572,
+    "name": "Thanbankyun",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 97.133331,
+      "lat": 24.15
+    }
+  },
+  {
+    "id": 1292579,
+    "name": "Thanatpin",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.583328,
+      "lat": 17.299999
+    }
+  },
+  {
+    "id": 1292580,
+    "name": "Thanatpin",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.303329,
+      "lat": 17.211941
+    }
+  },
+  {
+    "id": 1293118,
+    "name": "Tanintharyi Region",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 99.0,
+      "lat": 13.0
+    }
+  },
+  {
+    "id": 1293625,
+    "name": "Dawei",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 98.199997,
+      "lat": 14.08333
+    }
+  },
+  {
+    "id": 1293960,
+    "name": "Taunggyi",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 97.033333,
+      "lat": 20.783331
+    }
+  },
+  {
+    "id": 1294041,
+    "name": "Taungdwingyi",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.550003,
+      "lat": 20.01667
+    }
+  },
+  {
+    "id": 1294701,
+    "name": "Tanaunghla",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.51667,
+      "lat": 20.48333
+    }
+  },
+  {
+    "id": 1295395,
+    "name": "Syriam",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.237778,
+      "lat": 16.772221
+    }
+  },
+  {
+    "id": 1295765,
+    "name": "Sittwe",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 92.900002,
+      "lat": 20.15
+    }
+  },
+  {
+    "id": 1296119,
+    "name": "Singun",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.033333,
+      "lat": 21.58333
+    }
+  },
+  {
+    "id": 1296736,
+    "name": "Shwebo",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.699997,
+      "lat": 22.566669
+    }
+  },
+  {
+    "id": 1297099,
+    "name": "Shan State",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 98.0,
+      "lat": 22.0
+    }
+  },
+  {
+    "id": 1298480,
+    "name": "Sagaing Region",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.5,
+      "lat": 23.5
+    }
+  },
+  {
+    "id": 1298482,
+    "name": "Sagaing",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.979652,
+      "lat": 21.8787
+    }
+  },
+  {
+    "id": 1298822,
+    "name": "Yangon Region",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.166672,
+      "lat": 17.0
+    }
+  },
+  {
+    "id": 1298824,
+    "name": "Yangon",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.156113,
+      "lat": 16.805281
+    }
+  },
+  {
+    "id": 1298852,
+    "name": "Rakhine State",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 94.25,
+      "lat": 19.0
+    }
+  },
+  {
+    "id": 1298911,
+    "name": "Pyu",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.433327,
+      "lat": 18.48333
+    }
+  },
+  {
+    "id": 1298987,
+    "name": "Pyinmana",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.216667,
+      "lat": 19.73333
+    }
+  },
+  {
+    "id": 1299154,
+    "name": "Pyay",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.216667,
+      "lat": 18.816669
+    }
+  },
+  {
+    "id": 1299237,
+    "name": "Pyapon",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.683327,
+      "lat": 16.283331
+    }
+  },
+  {
+    "id": 1299298,
+    "name": "Pya",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.599998,
+      "lat": 21.51667
+    }
+  },
+  {
+    "id": 1300463,
+    "name": "Bago Region",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.25,
+      "lat": 18.25
+    }
+  },
+  {
+    "id": 1300466,
+    "name": "Bago",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.479721,
+      "lat": 17.33667
+    }
+  },
+  {
+    "id": 1300969,
+    "name": "Paungde",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.5,
+      "lat": 18.48333
+    }
+  },
+  {
+    "id": 1302015,
+    "name": "Pānghpak",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 99.120277,
+      "lat": 20.31222
+    }
+  },
+  {
+    "id": 1302439,
+    "name": "Pakokku",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.099998,
+      "lat": 21.33333
+    }
+  },
+  {
+    "id": 1302849,
+    "name": "Hpa-An",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 97.633331,
+      "lat": 16.89056
+    }
+  },
+  {
+    "id": 1303406,
+    "name": "Nyaunglebin",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.73333,
+      "lat": 17.950001
+    }
+  },
+  {
+    "id": 1304138,
+    "name": "Ninglum",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 97.23333,
+      "lat": 25.216669
+    }
+  },
+  {
+    "id": 1307641,
+    "name": "Myoma",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 92.883331,
+      "lat": 20.133329
+    }
+  },
+  {
+    "id": 1307741,
+    "name": "Myitkyina",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 97.400002,
+      "lat": 25.383329
+    }
+  },
+  {
+    "id": 1307835,
+    "name": "Myingyan",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.383331,
+      "lat": 21.466669
+    }
+  },
+  {
+    "id": 1308204,
+    "name": "Myanaung",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.316673,
+      "lat": 18.283331
+    }
+  },
+  {
+    "id": 1308415,
+    "name": "Mudon",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 97.716393,
+      "lat": 16.25778
+    }
+  },
+  {
+    "id": 1308464,
+    "name": "Mawlamyinegyunn",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.26667,
+      "lat": 16.383329
+    }
+  },
+  {
+    "id": 1308465,
+    "name": "Mawlamyine",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 97.625557,
+      "lat": 16.49139
+    }
+  },
+  {
+    "id": 1308522,
+    "name": "Monywa",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.133331,
+      "lat": 22.116671
+    }
+  },
+  {
+    "id": 1308528,
+    "name": "Mon State",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 97.25,
+      "lat": 17.0
+    }
+  },
+  {
+    "id": 1308937,
+    "name": "Mogok",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.5,
+      "lat": 22.91667
+    }
+  },
+  {
+    "id": 1309289,
+    "name": "Minbu",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 94.883331,
+      "lat": 20.183331
+    }
+  },
+  {
+    "id": 1309611,
+    "name": "Myeik",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 98.599998,
+      "lat": 12.43333
+    }
+  },
+  {
+    "id": 1309793,
+    "name": "Meiktila",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 95.866669,
+      "lat": 20.866671
+    }
+  },
+  {
+    "id": 1309937,
+    "name": "Pyin Oo Lwin",
+    "state": "",
+    "country": "MM",
+    "coord": {
+      "lon": 96.466667,
+      "lat": 22.033331
+    }
+  }
+]
