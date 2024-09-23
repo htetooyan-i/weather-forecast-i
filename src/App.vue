@@ -239,6 +239,7 @@ const getWeatherWithAutoComplete = (cityName) => {
 const getData = () => {
   if (inputName.value) {
     console.log(inputName.value);
+    console.log(filteredName.value);
     if (filteredName.value != 0) {
       setCity(inputName.value);
       city.value = inputName.value;
