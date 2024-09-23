@@ -238,6 +238,7 @@ const getWeatherWithAutoComplete = (cityName) => {
 // Method to update the city and weather data
 const getData = () => {
   if (inputName.value) {
+    console.log(inputName.value);
     if (filteredName.value > 0) {
       setCity(inputName.value);
       city.value = inputName.value;
