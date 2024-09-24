@@ -1,11 +1,11 @@
 <template>
   <div>
     <div
-      class="grid grid-cols-3 h-[50px] justify-between items-center border-2"
+      class="grid grid-cols-3 h-[50px] justify-between items-center border-2 cursor-not-allowed"
     >
-      <div class="border-e-2 text-center cursor-pointer">Humidity</div>
-      <div class="border-e-2 text-center cursor-pointer">Cloudiness</div>
-      <div class="text-center cursor-pointer">Wind speed</div>
+      <div class="border-e-2 text-center">Humidity</div>
+      <div class="border-e-2 text-center">Cloudiness</div>
+      <div class="text-center">Wind speed</div>
     </div>
     <div :class="primaryBgColor" class="rounded-lg shadow-2xl p-5 h-[250px]">
       <div :class="secondaryBgColor" class="rounded-md h-full shadow-2xl">
