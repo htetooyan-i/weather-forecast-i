@@ -4,7 +4,7 @@
       :class="secondaryBgColor"
       class="rounded-md h-full shadow-2xl grid grid-cols-4"
     >
-      //* weather prediction for next four days
+       <!-- weather prediction for next four days -->
       <div v-for="prediction in predictionData" class="py-2 font-color">
         <p id="day" class="text-center">{{ prediction.day }}</p>
         <div class="font-color my-2 grow">
