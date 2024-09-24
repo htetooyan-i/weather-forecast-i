@@ -49,7 +49,7 @@
 
     <div class="max-w-5xl mx-auto min-h-screen px-5 pt-3">
       <!-- search bar and temperature unit toggle -->
-      <header class="flex flex-rows w-full justify-between">
+      <header class="flex flex-rows w-full justify-between items-center">
         <div class="max-w-md grow relative">
           <input
             v-model="inputName"
