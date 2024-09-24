@@ -1,5 +1,6 @@
 <template>
   <div :class="primaryBgColor">
+    //* Alert when city input is invalid
     <div
       v-if="invalidCity"
       id="alert-border-2"
@@ -47,6 +48,7 @@
     </div>
 
     <div class="max-w-5xl mx-auto min-h-screen px-5 pt-3">
+      //* search bar and temperature unit toggle
       <header class="flex flex-rows w-full justify-between">
         <div class="max-w-md grow relative">
           <input
@@ -172,6 +174,7 @@ const toggleUnit = () => {
   isFahrenheit.value = !isFahrenheit.value;
 };
 
+//* get country data from pinia store file
 const countriesDataStore = useCountriesStore();
 
 const {
@@ -185,10 +188,12 @@ const {
   inputEntered,
 } = storeToRefs(countriesDataStore);
 
+//* watch for input changes
 watch(inputName, (newValue) => {
   userInputName.value = newValue;
 });
 
+// Fetch country data from pinia store file
 onMounted(async () => {
   // Fetch the data
   await countriesDataStore.fetchCountryData();
@@ -216,23 +221,28 @@ watch(inputName, (newCity) => {
   }
 });
 
+// get weather data for default city
 getWeather();
 
+//look for cursor to check the input
 const handleBlur = () => {
   setTimeout(() => {
     clearInput();
   }, 200); // Adding a delay of 200ms to give time for clicks on autocomplete options
 };
 
+// clear input when user search
 const clearInput = () => {
   inputName.value = ""; // Clear the input field value
   inputEntered.value = false; // Reset inputEntered state
 };
 
+//FIXME: get city and country names with api
 const getWeatherWithAutoComplete = (cityName) => {
   inputName.value = cityName;
   getData();
 };
+
 // Method to update the city and weather data
 const getData = () => {
   if (inputName.value) {
@@ -248,7 +258,7 @@ const getData = () => {
     emptyInput.value = true;
   }
 };
-
+// back to views current weather display
 const backToDashboard = () => {
   showPrediction.value = false;
 };

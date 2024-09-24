@@ -10,10 +10,3 @@ app.use(createPinia());
 app.use(router);
 
 app.mount("#app");
-
-// const fcToggleContainer = document.querySelector("#fcToggleContainer");
-// const fcToggle = document.querySelector("#fcToggle");
-
-// fcToggleContainer.addEventListener("click", () => {
-//   fcToggle.classList.toggle("translate-x-[36px]");
-// });

@@ -4,6 +4,7 @@
       :class="secondaryBgColor"
       class="rounded-md h-full shadow-2xl grid grid-cols-4"
     >
+      //* weather prediction for next four days
       <div v-for="prediction in predictionData" class="py-2 font-color">
         <p id="day" class="text-center">{{ prediction.day }}</p>
         <div class="font-color my-2 grow">
@@ -100,9 +101,10 @@ const { isFahrenheit } = storeToRefs(dataStore);
 const predictionDataStore = usePredictionStore();
 const predictionData = ref([]);
 
-const { lat, lon, showPrediction, finalData, predictionDate, currentData } =
-  storeToRefs(predictionDataStore);
+//declare data from prediction pinia store file
+const { finalData } = storeToRefs(predictionDataStore);
 
+//watch user choice and display predictions
 watch(finalData, (newData) => {
   if (newData && Array.isArray(newData.list)) {
     const todayTimestamp = new Date().getTime();
@@ -186,10 +188,11 @@ watch(finalData, (newData) => {
   }
 });
 
+// method to change temp to celsius
 const temperatureInCelsius = (temp) => {
   return Math.round(temp - 273.15);
 };
-
+// method to change temp to fahrenheit
 const temperatureInFahrenheit = (temp) => {
   return Math.round((temp - 273.15) * (9 / 5) + 32);
 };

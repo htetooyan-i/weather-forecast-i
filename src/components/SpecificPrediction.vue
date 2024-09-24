@@ -1,3 +1,4 @@
+//FIXME: This page is still in development stage
 <template>
   <div>
     <div
@@ -7,8 +8,14 @@
       <div class="border-e-2 text-center">Cloudiness</div>
       <div class="text-center">Wind speed</div>
     </div>
-    <div :class="primaryBgColor" class="rounded-lg shadow-2xl p-5 h-[250px] cursor-not-allowed">
-      <div :class="secondaryBgColor" class="rounded-md h-full shadow-2xl cursor-not-allowed">
+    <div
+      :class="primaryBgColor"
+      class="rounded-lg shadow-2xl p-5 h-[250px] cursor-not-allowed"
+    >
+      <div
+        :class="secondaryBgColor"
+        class="rounded-md h-full shadow-2xl cursor-not-allowed"
+      >
         <h1 class="text-[120px] text-center cursor-not-allowed">🔜 🥲</h1>
       </div>
     </div>
