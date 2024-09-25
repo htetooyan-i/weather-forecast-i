@@ -1,5 +1,10 @@
 <template>
-  <div :class="primaryBgColor">
+  <div
+    :class="primaryBgColor"
+    style="
+      background-image: url('./img/blue-sky-with-white-clouds-sky-background.jpg');
+    "
+  >
     <!-- Alert when city input is invalid -->
     <div
       v-if="invalidCity"
