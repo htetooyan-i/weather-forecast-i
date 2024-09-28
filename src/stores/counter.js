@@ -33,9 +33,6 @@ export const useDataStore = defineStore("data", () => {
       }
 
       const locationData = await locationResponse.json();
-      console.log(locationData);
-      console.log(locationResponse);
-
       currentData.value = locationData;
       countryCode.value = currentData.value.sys.country;
       await countryInfo.changeCountryFormat();

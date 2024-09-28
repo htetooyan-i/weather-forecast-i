@@ -199,7 +199,7 @@
       </main>
       <hr class="border-1 border-indigo-300" />
       <footer>
-        <div class="grid grid-cols-2 gap-4 p-2">
+        <div class="grid grid-cols-3 gap-4 p-2">
           <div class="flex flex-col flex-nowrap justify-center items-center">
             <p class="text-center font-color mb-2 cursor-text">Cloudiness</p>
             <img src="../icons/cloud.svg" alt="" class="w-[50px] h-[50px]" />
@@ -209,6 +209,17 @@
             <p class="text-center font-color mb-2 cursor-text">Humidity</p>
             <img src="../icons/humidity.svg" alt="" class="w-[50px] h-[50px]" />
             <span class="font-color cursor-text">{{ data.humidity }}%</span>
+          </div>
+          <div class="flex flex-col flex-nowrap justify-center items-center">
+            <p class="text-center font-color mb-2 cursor-text">Wind Speed</p>
+            <img
+              src="../icons/wind-speed.svg"
+              alt=""
+              class="w-[50px] h-[50px]"
+            />
+            <span class="font-color cursor-text"
+              >{{ (data.windSpeed * 2.23694).toFixed(2) }}mph</span
+            >
           </div>
         </div>
       </footer>
@@ -221,13 +232,11 @@ import { useDataStore } from "../stores/counter";
 import { useCountriesStore } from "../stores/countries";
 import { storeToRefs } from "pinia";
 import { usePredictionStore } from "../stores/predict";
-import { computed } from "vue";
 import { ref, onMounted, watch } from "vue";
-import { reactive } from "vue";
 
 const predictionDataStore = usePredictionStore();
 
-const { lat, lon, showPrediction, finalData, predictionDate, currentData } =
+const { lat, lon, showPrediction, predictionDate, currentData } =
   storeToRefs(predictionDataStore);
 
 // Import the store
